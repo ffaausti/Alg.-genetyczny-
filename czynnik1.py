@@ -28,3 +28,7 @@ def porownywanie_wartosci_1(wartosci_kolumn_nonogramu,wartosci_wierszy_nonogramu
         lista_bledow.append(blad2)
         
     return sum(lista_bledow)
+
+wartosci_wierszy_osobnika, wartosci_kolumn_osobnika = zliczanie_wartosci_osobnika(osobnik_matryca)   
+wartosci_wierszy_nonogramu, wartosci_kolumn_nonogramu = zliczanie_wartosci_nonogramu(kolumny, wiersze)
+print(porownywanie_wartosci_1(wartosci_kolumn_nonogramu, wartosci_wierszy_nonogramu, wartosci_kolumn_osobnika, wartosci_wierszy_osobnika))
